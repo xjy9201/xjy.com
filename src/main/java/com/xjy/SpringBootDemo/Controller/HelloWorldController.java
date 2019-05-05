@@ -10,7 +10,7 @@ public class HelloWorldController {
     @ResponseBody
     @RequestMapping("hello")
     public String helloWorld(){
-        return "hello world";
+        return "hello s3pr3ingboot !!!!";
     }
 }
 //com.xjy.SpringBootDemo.Controller; 需要把这个包放到扫描器里，@AutoConfigurationPackage起的作用
