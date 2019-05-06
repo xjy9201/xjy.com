@@ -10,6 +10,7 @@ public class HelloWorldController {
     @ResponseBody
     @RequestMapping("hello")
     public String helloWorld(){
+        System.out.println("Test GitHub Push!");
         return "hello spring version 2.0这是版本2.0";
     }
 }
