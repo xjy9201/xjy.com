@@ -1,0 +1,11 @@
+server:
+    port: 8880
+
+student:
+    name: xujiyao
+    age: 27
+    isAdult: true
+    hobbies: [basketball,swimming]
+    address: {province: 江苏, city: 常州, area: 钟楼区}
+    skills: [programming,fitness]
+    pet: {name: 局长, type: hsq}
