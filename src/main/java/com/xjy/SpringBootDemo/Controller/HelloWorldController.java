@@ -12,6 +12,7 @@ public class HelloWorldController {
     public String helloWorld(){
         System.out.println("Test GitHub Push!");
         System.out.println("Test Idea Git/GitHub");
+        System.out.println("Test Idea Git/GitHub Again");
         return "hello spring version 2.0这是版本2.0";
     }
 }
