@@ -13,6 +13,7 @@ public class HelloWorldController {
         System.out.println("Test GitHub Push!");
         System.out.println("Test Idea Git/GitHub");
         System.out.println("Test Idea Git/GitHub Again");
+        System.out.println("Test Define Remote Url");
         return "hello spring version 2.0这是版本2.0";
     }
 }
