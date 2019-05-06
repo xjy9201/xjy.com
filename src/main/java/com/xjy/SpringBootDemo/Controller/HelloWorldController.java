@@ -11,6 +11,7 @@ public class HelloWorldController {
     @RequestMapping("hello")
     public String helloWorld(){
         System.out.println("Test GitHub Push!");
+        System.out.println("Test Idea Git/GitHub");
         return "hello spring version 2.0这是版本2.0";
     }
 }
