@@ -10,7 +10,9 @@ public class HelloWorldController {
     @ResponseBody
     @RequestMapping("hello")
     public String helloWorld(){
-        return "hello spring this is master branch!";
+
+        return "hello spring this is devnew branch";
+
     }
 }
 //com.xjy.SpringBootDemo.Controller; 需要把这个包放到扫描器里，@AutoConfigurationPackage起的作用
