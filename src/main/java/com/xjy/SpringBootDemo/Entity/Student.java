@@ -1,33 +1,40 @@
 package com.xjy.SpringBootDemo.Entity;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
+import org.springframework.validation.annotation.Validated;
 
+import javax.validation.constraints.Email;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 
 @Component //把此javabean Student类放到spring容器
 @ConfigurationProperties(prefix = "student") //识别的就是yml里的student
+@Validated //开启校验
 public class Student {
     private String name;
+//    @Value("55")
     private int age;
     private boolean isAdult;
     private String[] hobbies;
     private Map<String,String> address;
     private List<String> skills;
+    @Email
+    private String email;
     private Pet pet;
 
     public Student() {
     }
 
-    public Student(String name, int age, boolean isAdult, String[] hobbies, Map<String, String> address, List<String> skills, Pet pet) {
+    public Student(String name, boolean isAdult, String[] hobbies, Map<String, String> address, List<String> skills, String email, Pet pet) {
         this.name = name;
-        this.age = age;
         this.isAdult = isAdult;
         this.hobbies = hobbies;
         this.address = address;
         this.skills = skills;
+        this.email = email;
         this.pet = pet;
     }
 
@@ -79,6 +86,14 @@ public class Student {
         this.skills = skills;
     }
 
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
     public Pet getPet() {
         return pet;
     }
@@ -96,6 +111,7 @@ public class Student {
                 ", hobbies=" + Arrays.toString(hobbies) +
                 ", address=" + address +
                 ", skills=" + skills +
+                ", email='" + email + '\'' +
                 ", pet=" + pet +
                 '}';
     }

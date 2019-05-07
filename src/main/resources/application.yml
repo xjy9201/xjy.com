@@ -2,10 +2,11 @@ server:
     port: 8880
 
 student:
-    name: xujiyao
-    age: 27
-    isAdult: true
+    name: ${student.name}
+    age: ${random.int(18,30)}
+    adult: true
     hobbies: [basketball,swimming]
     address: {province: 江苏, city: 常州, area: 钟楼区}
     skills: [programming,fitness]
+    email: jxu0102@163.com
     pet: {name: 局长, type: hsq}
