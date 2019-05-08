@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class HelloWorldController {
 
     @ResponseBody
-    @RequestMapping("hello")
+    @RequestMapping("/hello")
     public String helloWorld(){
         System.out.println("Test GitHub Push!");
         System.out.println("Test Idea Git/GitHub");

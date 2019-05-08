@@ -1,5 +1,19 @@
 server:
     port: 8880
+#spring:
+#  profiles:
+#    active: test
+#---
+#server:
+#    port: 8881
+#spring:
+#    profiles: dev
+#---
+#server:
+#    port: 8882
+#spring:
+#    profiles: test
+
 
 student:
     name: ${student.name}
